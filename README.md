@@ -29,7 +29,9 @@ dev - till * - contains the intermediate codes. dev - till block explorer carrie
   * `/vote` perform voting
   * #### There are a few more end-points associated with vote to which the interface navigates a voter.
   
-![](screenShots/1.png "/vote index page") ![](screenShots/1.png "ErrorPage")
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](screenShots/1.png)  |  ![](screenShots/2.png)
 
 ### NOTE:
 This is a very basic implementation of blockchain concepts. This cannot be used for development(as of now), I think so.
