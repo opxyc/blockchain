@@ -27,9 +27,10 @@ dev - till * - contains the intermediate codes. dev - till block explorer carrie
   * `/address/:address` get the details of a wallet(person), given it's address
   
   * `/vote` perform voting
-  #### There are a few more end-points associated with vote to which the interface navigates a voter.
+  * #### There are a few more end-points associated with vote to which the interface navigates a voter.
   
+<img src="./screenShots/1.png">
 
 ### NOTE:
-This is a very basic implementation of blockchain concepts read about. This cannot be used for development(as per now), I think so.
+This is a very basic implementation of blockchain concepts. This cannot be used for development(as of now), I think so.
   
