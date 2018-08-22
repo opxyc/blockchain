@@ -1,0 +1,23 @@
+<html>
+<head><title>Vote</title></head>
+<style>
+    body{background: #E0E0E0;}
+    .login{text-align:center;width:30%;margin:auto;margin-top:30vh;box-shadow:0 4px 8px rgba(0,0,0,0.1);padding:24px;background: #f1f1f1;border-radius:4px;}
+    input{outline: none;}
+    .submit{font-weight: bold;cursor:pointer;color:#fff;background: #FF6D00;margin-bottom:-10px;border:0px;padding:10 12 10 12;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,0.3);}
+</style>
+<body>
+    <div class="login">
+        <form name="vote" method="post" action="commit">
+            <input hidden value="candidate_1" name="recipient">
+            <input hidden value="<%= id %>" name="sender">
+            <input type="submit" value="CANDIDATE 1" class="submit">
+        </form>
+        <form name="vote" method="post" action="commit">
+                <input hidden value="candidate_2" name="recipient">
+                <input hidden value="<%= id %>" name="sender">
+                <input type="submit" value="CANDIDATE 2" class="submit">
+        </form>
+    </div>
+</body>
+</html>

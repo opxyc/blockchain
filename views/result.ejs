@@ -1,0 +1,39 @@
+<html>
+<head><title>Vote</title></head>
+<style>
+    body{background:#A5D6A7;color:#fff;}
+    .login{width:30%;margin:auto;text-align:center;font-family:arial;
+    margin-top:30vh;box-shadow:0 4px 8px rgba(0,0,0,0.1);padding:24px;
+    background:#2E7D32;border-radius:4px;}
+    .winner{font-size:30px;}
+</style>
+<body>
+    <div class="login">
+        <div id="result-raw" style="display: none;"><%= JSON.stringify(result) %></div>
+        <div class="winner">
+            <font size="2">Winner</font><br/>
+            <div id="winner"></div>
+        </div>
+        <div style="margin-top:40px;">
+            <table id="result" style="width:100%;font-size:14px;">
+                <tr><th style="text-align: left;">DETAILS</th></tr>
+                <tr><th style="text-align: left;">Candidate</th><th style="text-align: left;">Votes</th></tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    var res=document.getElementById("result-raw").innerHTML;
+    res=JSON.parse((res));
+    var i=0;
+    var winner,max=0;
+    for(;i<res.length;i++){
+        if(res[i].votes>max){
+            max=res[i].votes;
+            winner=res[i].candidate;
+        }
+        document.getElementById("result").innerHTML+=("<tr><td>"+res[i].candidate+"</th><td>"+res[i].votes+"</tr>")
+    }
+    document.getElementById("winner").innerHTML=winner;
+</script>
+</html>
