@@ -35,5 +35,8 @@ dev - till * - contains the intermediate codes. dev - till block explorer carrie
 ![](screenShots/3.png)  |  ![](screenShots/4.png)
 
 ### NOTE:
-This is a very basic implementation of blockchain concepts. This cannot be used for development(as of now), I think so.
+This is a very basic implementation of blockchain concepts. This cannot be used for development(as of now). 
+
+#### To do
+Validation is done during the voting process itself which have to be changed and implemented as a task of a miner.
   
